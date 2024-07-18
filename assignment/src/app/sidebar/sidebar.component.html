@@ -1,10 +1,22 @@
 <div class="sidebar" [ngClass]="{ 'open': isOpen }">
-    <button (click)="toggleSidebar()">Toggle Sidebar</button>
-    <ul>
-      <li><i class="fa fa-home"></i><span class="sidebar-text">Home</span></li>
-      <li><i class="fa fa-shopping-cart"></i><span class="sidebar-text">Products</span></li>
-      <li><i class="fa fa-info-circle"></i><span class="sidebar-text">About</span></li>
-      <!-- Add more icons and text as needed -->
-    </ul>
-  </div>
-  
+  <button (click)="toggleSidebar()">&#9776;</button>
+  <ul>
+    <li>
+      <i class="fa fa-th"></i>
+      <span class="sidebar-text">Dashboard</span>
+    </li>
+    <li>
+      <i class="fa fa-tag"></i>
+      <span class="sidebar-text">Deals</span>
+    </li>
+    <li>
+      <i class="fa fa-chart-line"></i>
+      <span class="sidebar-text">Reports</span>
+    </li>
+    <li>
+      <i class="fa fa-cogs"></i>
+      <span class="sidebar-text">Config</span>
+    </li>
+    <!-- Add more items as needed -->
+  </ul>
+</div>
