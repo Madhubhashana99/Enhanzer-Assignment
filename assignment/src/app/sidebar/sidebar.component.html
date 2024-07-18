@@ -1,22 +1,21 @@
-<div class="sidebar" [ngClass]="{ 'open': isOpen }">
+<div class="sidebar" [ngClass]="{ 'collapsed': !isOpen }">
   <button (click)="toggleSidebar()">&#9776;</button>
   <ul>
     <li>
-      <i class="fa fa-th"></i>
+      <i class="fas fa-th"></i>
       <span class="sidebar-text">Dashboard</span>
     </li>
     <li>
-      <i class="fa fa-tag"></i>
+      <i class="fas fa-tag"></i>
       <span class="sidebar-text">Deals</span>
     </li>
     <li>
-      <i class="fa fa-chart-line"></i>
+      <i class="fas fa-chart-line"></i>
       <span class="sidebar-text">Reports</span>
     </li>
     <li>
-      <i class="fa fa-cogs"></i>
+      <i class="fas fa-cogs"></i>
       <span class="sidebar-text">Config</span>
     </li>
-    <!-- Add more items as needed -->
   </ul>
 </div>
