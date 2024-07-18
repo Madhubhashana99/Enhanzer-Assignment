@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Deal Size</th>
+            <th>Deal Category</th>
+            <th>Deal Employee</th>
+            <th>Deal Location</th>
+            <th>Pipeline</th>
+            <th>Stage</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let deal of deals">
+            <td>{{deal.size}}</td>
+            <td>{{deal.category}}</td>
+            <td>{{deal.employee}}</td>
+            <td>{{deal.location}}</td>
+            <td>{{deal.pipeline}}</td>
+            <td>{{deal.stage}}</td>
+            <td>{{deal.updated}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
